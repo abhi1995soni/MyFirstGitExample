@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,13 +32,28 @@
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0M-NU-8uL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        Using git.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjm-hq-Kpj">
+                                <rect key="frame" x="66" y="120" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DPe-Ki-Pz3"/>
+                                    <constraint firstAttribute="height" constant="30" id="MFm-19-Yh4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2gd-MJ-dNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2jY-mZ-MMa"/>
+                            <constraint firstItem="Gjm-hq-Kpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="S3t-5D-aFF"/>
                             <constraint firstItem="2gd-MJ-dNo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SoF-NG-PBZ"/>
+                            <constraint firstItem="Gjm-hq-Kpj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="nhH-nE-i04"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Gjm-hq-Kpj" id="RIb-1u-dvu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
