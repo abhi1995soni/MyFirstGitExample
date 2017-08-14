@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: Any) {
    
     print("button is pressed.")
-   
+    print("Good its done")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
