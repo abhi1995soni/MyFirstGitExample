@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     @IBAction func button(_ sender: Any) {
    
     print("button is pressed.")
